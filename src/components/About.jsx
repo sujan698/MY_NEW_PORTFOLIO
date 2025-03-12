@@ -1,13 +1,11 @@
-
-
-import { motion } from "framer-motion"
-import { useInView } from "framer-motion"
-import { useRef } from "react"
-import "../styles/About.css"
+import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
+import "../styles/About.css";
 
 const About = () => {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, amount: 0.3 })
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.3 });
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -18,7 +16,7 @@ const About = () => {
         delayChildren: 0.3,
       },
     },
-  }
+  };
 
   const itemVariants = {
     hidden: { y: 50, opacity: 0 },
@@ -31,7 +29,7 @@ const About = () => {
         damping: 10,
       },
     },
-  }
+  };
 
   return (
     <section id="about" className="about">
@@ -50,24 +48,33 @@ const About = () => {
         <div className="about-content">
           <motion.div className="about-image" variants={itemVariants}>
             <div className="image-container">
-              <img src="/placeholder.svg?height=400&width=400" alt="Sujan Bhattarai" />
+              <img
+                src="/placeholder.svg?height=400&width=400"
+                alt="Sujan Bhattarai"
+              />
               <div className="image-outline"></div>
             </div>
           </motion.div>
 
           <motion.div className="about-text" variants={containerVariants}>
-            <motion.h3 variants={itemVariants}>Full Stack Web Developer</motion.h3>
+            <motion.h3 variants={itemVariants}>
+              Full Stack Web Developer
+            </motion.h3>
             <motion.p variants={itemVariants}>
-              Hello! I'm Sujan Bhattarai, a passionate full stack web developer with expertise in building modern web
-              applications. I enjoy creating elegant solutions to complex problems.
+              Hello! I'm Sujan Bhattarai, a passionate full stack web developer
+              with expertise in building modern web applications. I enjoy
+              creating elegant solutions to complex problems.
             </motion.p>
             <motion.p variants={itemVariants}>
-              With a strong foundation in both frontend and backend technologies, I strive to create seamless user
-              experiences while ensuring robust and scalable backend systems.
+              With a strong foundation in both frontend and backend
+              technologies, I strive to create seamless user experiences while
+              ensuring robust and scalable backend systems.
             </motion.p>
             <motion.p variants={itemVariants}>
-              I'm constantly learning and exploring new technologies to stay at the forefront of web development. My
-              goal is to build applications that are not only functional but also intuitive and enjoyable to use.
+              I'm constantly learning and exploring new technologies to stay at
+              the forefront of web development. My goal is to build applications
+              that are not only functional but also intuitive and enjoyable to
+              use.
             </motion.p>
 
             <motion.div className="about-details" variants={containerVariants}>
@@ -77,7 +84,7 @@ const About = () => {
               </motion.div>
               <motion.div className="detail-item" variants={itemVariants}>
                 <span className="detail-label">Email:</span>
-                <span className="detail-value">contact@sujanbhattarai.com</span>
+                <span className="detail-value">officialsujan@gmail.com</span>
               </motion.div>
               <motion.div className="detail-item" variants={itemVariants}>
                 <span className="detail-label">Location:</span>
@@ -112,8 +119,7 @@ const About = () => {
         </div>
       </motion.div>
     </section>
-  )
-}
+  );
+};
 
-export default About
-
+export default About;
