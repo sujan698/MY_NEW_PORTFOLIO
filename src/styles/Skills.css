@@ -1,0 +1,129 @@
+.skills {
+    padding: 100px 0;
+  }
+  
+  .skills-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .skills-content {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .skills-bars,
+  .skills-cloud {
+    flex: 1;
+    background-color: var(--background-alt);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .skills-bars h3,
+  .skills-cloud h3 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    color: var(--text-color);
+    text-align: center;
+  }
+  
+  .skill-item {
+    margin-bottom: 25px;
+  }
+  
+  .skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .skill-name {
+    font-weight: 600;
+    color: var(--text-color);
+  }
+  
+  .skill-percentage {
+    color: var(--primary-color);
+    font-weight: 600;
+  }
+  
+  .skill-bar {
+    height: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .skill-progress {
+    height: 100%;
+    background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+    border-radius: 5px;
+  }
+  
+  .cloud-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .tech-tag {
+    padding: 8px 15px;
+    background-color: white;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+    cursor: default;
+  }
+  
+  .tech-tag:nth-child(3n + 1) {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+  }
+  
+  .tech-tag:nth-child(3n + 2) {
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+  }
+  
+  .tech-tag:nth-child(3n + 3) {
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+  }
+  
+  @media (max-width: 992px) {
+    .skills-content {
+      flex-direction: column;
+    }
+  
+    .skills-bars,
+    .skills-cloud {
+      flex: none;
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .skills {
+      padding: 80px 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .skills-bars,
+    .skills-cloud {
+      padding: 20px;
+    }
+  
+    .tech-tag {
+      font-size: 0.8rem;
+      padding: 6px 12px;
+    }
+  }
+  
+  
