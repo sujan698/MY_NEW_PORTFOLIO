@@ -112,7 +112,7 @@ const Contact = () => {
               </div>
               <div className="contact-text">
                 <h3>Email</h3>
-                <p>contact@sujanbhattarai.com</p>
+                <p>officialsujan@gmail.com</p>
               </div>
             </motion.div>
 
@@ -124,23 +124,23 @@ const Contact = () => {
               </div>
               <div className="contact-text">
                 <h3>Phone</h3>
-                <p>+977 9800000000</p>
+                <p>+977 9824018739</p>
               </div>
             </motion.div>
 
             <motion.div className="social-links" variants={itemVariants}>
               <h3>Connect With Me</h3>
               <div className="social-icons">
-                <a href="#" className="social-icon" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/sujan698" className="social-icon" target="_blank" rel="noopener noreferrer">
                   <div className="icon github-icon"></div>
                 </a>
-                <a href="#" className="social-icon" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/sujan-bhattarai-959649229/" className="social-icon" target="_blank" rel="noopener noreferrer">
                   <div className="icon linkedin-icon"></div>
                 </a>
                 <a href="#" className="social-icon" target="_blank" rel="noopener noreferrer">
                   <div className="icon twitter-icon"></div>
                 </a>
-                <a href="#" className="social-icon" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/sujan_642/" className="social-icon" target="_blank" rel="noopener noreferrer">
                   <div className="icon instagram-icon"></div>
                 </a>
               </div>
