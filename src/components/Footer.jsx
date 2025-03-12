@@ -58,16 +58,16 @@ const Footer = () => {
               <h4>Connect</h4>
               <ul>
                 <li>
-                  <a href="#">GitHub</a>
+                  <a href="https://github.com/sujan698">GitHub</a>
                 </li>
                 <li>
-                  <a href="#">LinkedIn</a>
+                  <a href="https://www.linkedin.com/in/sujan-bhattarai-959649229/">LinkedIn</a>
                 </li>
                 <li>
                   <a href="#">Twitter</a>
                 </li>
                 <li>
-                  <a href="#">Instagram</a>
+                  <a href="https://www.instagram.com/sujan_642/">Instagram</a>
                 </li>
               </ul>
             </div>
