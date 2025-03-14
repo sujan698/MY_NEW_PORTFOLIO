@@ -50,7 +50,7 @@ const About = () => {
           <motion.div className="about-image" variants={itemVariants}>
             <div className="image-container">
               <img
-                src={SujanImage.src}
+                src=""
                 alt="Sujan Bhattarai"
               />
               <div className="image-outline"></div>
