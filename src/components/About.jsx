@@ -2,8 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import "../styles/About.css";
-import SujanImage from "../../public/hero.jpg?height=400&width=400";
-import CV from "../assets/sujan_bhattarai_cv.pdf";
+
 
 const About = () => {
   const ref = useRef(null);
@@ -108,7 +107,7 @@ const About = () => {
                 Hire Me
               </motion.a>
               <motion.a
-                href={CV}
+                href="../../public/sujan_bhattarai_cv.pdf"
                 className="btn secondary-btn"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
