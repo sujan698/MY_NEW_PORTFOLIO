@@ -50,10 +50,7 @@ const About = () => {
         <div className="about-content">
           <motion.div className="about-image" variants={itemVariants}>
             <div className="image-container">
-              <img
-                src={SujanImage.src}
-                alt="Sujan Bhattarai"
-              />
+              <img src={SujanImage.src} alt="Sujan Bhattarai" />
               <div className="image-outline"></div>
             </div>
           </motion.div>
@@ -112,7 +109,7 @@ const About = () => {
                 className="btn secondary-btn"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                download
+                download="sujan_bhattarai_cv.pdf"
               >
                 Download CV
               </motion.a>
