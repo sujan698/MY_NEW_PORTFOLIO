@@ -49,7 +49,7 @@ const About = () => {
           <motion.div className="about-image" variants={itemVariants}>
             <div className="image-container">
               <img
-                src="/placeholder.svg?height=400&width=400"
+                src="../../public/hero.jpg?height=400&width=400"
                 alt="Sujan Bhattarai"
               />
               <div className="image-outline"></div>
@@ -106,7 +106,7 @@ const About = () => {
                 Hire Me
               </motion.a>
               <motion.a
-                href="/resume.pdf"
+                href="../../public/sujan_bhattarai_cv.pdf"
                 className="btn secondary-btn"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
