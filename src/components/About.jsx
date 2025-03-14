@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import "../styles/About.css";
+import SujanImage from "../../public/hero.jpg?height=400&width=400";
 
 const About = () => {
   const ref = useRef(null);
@@ -49,7 +50,7 @@ const About = () => {
           <motion.div className="about-image" variants={itemVariants}>
             <div className="image-container">
               <img
-                src="../../public/hero.jpg?height=400&width=400"
+                src={SujanImage.src}
                 alt="Sujan Bhattarai"
               />
               <div className="image-outline"></div>
