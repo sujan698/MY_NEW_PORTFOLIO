@@ -3,7 +3,6 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import "../styles/About.css";
 
-
 const About = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
@@ -49,11 +48,7 @@ const About = () => {
         <div className="about-content">
           <motion.div className="about-image" variants={itemVariants}>
             <div className="image-container">
-              <img
-                src=""
-                alt="Sujan Bhattarai"
-              />
-              <div className="image-outline"></div>
+              <img src="/hero.jpg" alt="Sujan Bhattarai" />
             </div>
           </motion.div>
 
