@@ -32,21 +32,6 @@ const About = () => {
       },
     },
   };
-  const handleDownloadCV = () => {
-    fetch(CV)
-      .then((response) => response.blob())
-      .then((blob) => {
-        const url = window.URL.createObjectURL(blob);
-        const a = document.createElement("a");
-        a.href = url;
-        a.download = "sujan_bhattarai_cv.pdf"; // Ensure correct filename
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-        window.URL.revokeObjectURL(url);
-      })
-      .catch((error) => console.error("Error downloading CV:", error));
-  };
 
   return (
     <section id="about" className="about">
@@ -65,7 +50,10 @@ const About = () => {
         <div className="about-content">
           <motion.div className="about-image" variants={itemVariants}>
             <div className="image-container">
-              <img src={SujanImage.src} alt="Sujan Bhattarai" />
+              <img
+                src={SujanImage.src}
+                alt="Sujan Bhattarai"
+              />
               <div className="image-outline"></div>
             </div>
           </motion.div>
@@ -119,14 +107,15 @@ const About = () => {
               >
                 Hire Me
               </motion.a>
-              <motion.button
+              <motion.a
+                href={CV}
                 className="btn secondary-btn"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                onClick={handleDownloadCV}
+                download
               >
                 Download CV
-              </motion.button>
+              </motion.a>
             </motion.div>
           </motion.div>
         </div>
