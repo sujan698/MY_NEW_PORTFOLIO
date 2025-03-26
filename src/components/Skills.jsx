@@ -32,15 +32,16 @@ const Skills = () => {
   const skills = [
     { name: "HTML", level: 95 },
     { name: "CSS", level: 90 },
-    { name: "JavaScript", level: 92 },
-    { name: "React.js", level: 88 },
-    { name: "Node.js", level: 85 },
-    { name: "Express.js", level: 87 },
-    { name: "NestJS", level: 80 },
-    { name: "MongoDB", level: 85 },
-    { name: "PostgreSQL", level: 82 },
-    { name: "Prisma ORM", level: 78 },
-    { name: "Drizzle ORM", level: 75 },
+    { name: "JavaScript", level: 75 },
+    { name: "React.js", level: 60 },
+    { name: "Next.js", level: 40 },
+    { name: "Node.js", level: 50 },
+    { name: "Express.js", level: 40 },
+    { name: "NestJS", level: 75 },
+    { name: "MongoDB", level: 50 },
+    { name: "PostgreSQL", level: 80 },
+    { name: "Prisma ORM", level: 75 },
+    { name: "Drizzle ORM", level: 30 },
   ]
 
   const technologies = [
@@ -57,10 +58,8 @@ const Skills = () => {
     "Drizzle ORM",
     "Git",
     "GitHub",
-    "RESTful APIs",
-    "GraphQL",
-    "Responsive Design",
-    "UI/UX Design",
+    "GitLab",
+    "Next.js",
   ]
 
   return (
