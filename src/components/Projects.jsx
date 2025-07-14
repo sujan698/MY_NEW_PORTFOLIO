@@ -57,7 +57,7 @@ const Projects = () => {
         "PostgreSQL",
         "Prisma",
       ],
-      link: "#",
+      link: "https://your-live-demo-1.com", // replace with actual live demo link
       github: "https://github.com/sujan698/Matrimonial-Web-App",
     },
     {
@@ -68,7 +68,7 @@ const Projects = () => {
       image: "/placeholder.svg?height=300&width=500",
       category: "frontend",
       technologies: ["React", "CSS", "Firebase"],
-      link: "",
+      link: "https://your-live-demo-2.com", // replace with actual live demo link
       github: "https://github.com/sujan698/real-estate-app",
     },
     {
@@ -90,7 +90,7 @@ const Projects = () => {
       image: "/placeholder.svg?height=300&width=500",
       category: "backend",
       technologies: ["Node.js", "Nest.js", "PostgreSQL", "Prisma"],
-      link: "#",
+      link: "https://your-live-demo-4.com", // replace with actual live demo link
       github: "https://github.com/sujan698/Inventry-Management-System",
     },
     {
@@ -160,26 +160,25 @@ const Projects = () => {
                 <div className="project-image">
                   <img src={project.image} alt={project.title} />
                   <div className="project-links">
-                    {project.link && project.link !== "#" && (
-                      <a
-                        href={project.link}
-                        className="project-link"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <span>Live Demo</span>
-                      </a>
-                    )}
-                    {project.github && project.github !== "#" && (
-                      <a
-                        href={project.github}
-                        className="project-link"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <span>GitHub</span>
-                      </a>
-                    )}
+                    {/* Show Live Demo button always */}
+                    <a
+                      href={project.link || "#"}
+                      className="project-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span>Live Demo</span>
+                    </a>
+
+                    {/* Show GitHub button always */}
+                    <a
+                      href={project.github || "#"}
+                      className="project-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span>GitHub</span>
+                    </a>
                   </div>
                 </div>
                 <div className="project-info">
