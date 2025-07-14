@@ -57,7 +57,7 @@ const Projects = () => {
         "PostgreSQL",
         "Prisma",
       ],
-      link: "https://your-live-demo-1.com", // replace with actual live demo link
+      link: "",
       github: "https://github.com/sujan698/Matrimonial-Web-App",
     },
     {
@@ -68,8 +68,8 @@ const Projects = () => {
       image: "/placeholder.svg?height=300&width=500",
       category: "frontend",
       technologies: ["React", "CSS", "Firebase"],
-      link: "https://your-live-demo-2.com", // replace with actual live demo link
-      github: "https://github.com/sujan698/real-estate-app",
+      link: "https://realestatehub.netlify.app/",
+      github: "https://github.com/sujan698/REAL-ESTATE-HUB",
     },
     {
       id: 3,
@@ -90,7 +90,7 @@ const Projects = () => {
       image: "/placeholder.svg?height=300&width=500",
       category: "backend",
       technologies: ["Node.js", "Nest.js", "PostgreSQL", "Prisma"],
-      link: "https://your-live-demo-4.com", // replace with actual live demo link
+      link: "",
       github: "https://github.com/sujan698/Inventry-Management-System",
     },
     {
