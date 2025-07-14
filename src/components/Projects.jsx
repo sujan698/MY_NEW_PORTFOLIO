@@ -1,7 +1,5 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { useInView } from "framer-motion";
-import { useRef } from "react";
+import { useState, useRef } from "react";
+import { motion, AnimatePresence, useInView } from "framer-motion";
 import "../styles/Projects.css";
 
 const Projects = () => {
@@ -70,30 +68,40 @@ const Projects = () => {
       image: "/placeholder.svg?height=300&width=500",
       category: "frontend",
       technologies: ["React", "CSS", "Firebase"],
-      link: "#",
-      github: "#",
+      link: "",
+      github: "https://github.com/sujan698/real-estate-app",
     },
     {
       id: 3,
-      title: "Inventry Management API",
+      title: "Resturant Management System",
       description:
-        "A RESTful API for a blog platform with authentication, post management, and comments.",
+        "A restaurant management system for managing orders, menus, and customer interactions.",
+      image: "/placeholder.svg?height=300&width=500",
+      category: "frontend",
+      technologies: ["React", "CSS"],
+      link: "https://foodie-front-theta.vercel.app/",
+      github: "https://github.com/sujan698/REAL-ESTATE-HUB",
+    },
+    {
+      id: 4,
+      title: "Inventory Management API",
+      description:
+        "A RESTful API for inventory with authentication, item management, and vendor/customer tracking.",
       image: "/placeholder.svg?height=300&width=500",
       category: "backend",
       technologies: ["Node.js", "Nest.js", "PostgreSQL", "Prisma"],
       link: "#",
       github: "https://github.com/sujan698/Inventry-Management-System",
     },
-
     {
-      id: 4,
+      id: 5,
       title: "Portfolio Website",
       description:
         "A personal portfolio website showcasing projects and skills (this website).",
       image: "/placeholder.svg?height=300&width=500",
       category: "frontend",
       technologies: ["React", "CSS", "Framer Motion"],
-      link: "#",
+      link: "https://sujan2.com.np",
       github: "https://github.com/sujan698/MY_NEW_PORTFOLIO",
     },
   ];
@@ -123,36 +131,17 @@ const Projects = () => {
         </motion.p>
 
         <motion.div className="project-filters" variants={itemVariants}>
-          <button
-            className={`filter-btn ${activeFilter === "all" ? "active" : ""}`}
-            onClick={() => setActiveFilter("all")}
-          >
-            All
-          </button>
-          <button
-            className={`filter-btn ${
-              activeFilter === "frontend" ? "active" : ""
-            }`}
-            onClick={() => setActiveFilter("frontend")}
-          >
-            Frontend
-          </button>
-          <button
-            className={`filter-btn ${
-              activeFilter === "backend" ? "active" : ""
-            }`}
-            onClick={() => setActiveFilter("backend")}
-          >
-            Backend
-          </button>
-          <button
-            className={`filter-btn ${
-              activeFilter === "fullstack" ? "active" : ""
-            }`}
-            onClick={() => setActiveFilter("fullstack")}
-          >
-            Full Stack
-          </button>
+          {["all", "frontend", "backend", "fullstack"].map((filter) => (
+            <button
+              key={filter}
+              className={`filter-btn ${
+                activeFilter === filter ? "active" : ""
+              }`}
+              onClick={() => setActiveFilter(filter)}
+            >
+              {filter.charAt(0).toUpperCase() + filter.slice(1)}
+            </button>
+          ))}
         </motion.div>
 
         <motion.div className="projects-grid" layout>
@@ -169,27 +158,28 @@ const Projects = () => {
                 whileHover={{ y: -10, transition: { duration: 0.3 } }}
               >
                 <div className="project-image">
-                  <img
-                    src={project.image || "/placeholder.svg"}
-                    alt={project.title}
-                  />
+                  <img src={project.image} alt={project.title} />
                   <div className="project-links">
-                    <a
-                      href={project.link}
-                      className="project-link"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <span>Live Demo</span>
-                    </a>
-                    <a
-                      href={project.github}
-                      className="project-link"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <span>GitHub</span>
-                    </a>
+                    {project.link && project.link !== "#" && (
+                      <a
+                        href={project.link}
+                        className="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <span>Live Demo</span>
+                      </a>
+                    )}
+                    {project.github && project.github !== "#" && (
+                      <a
+                        href={project.github}
+                        className="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <span>GitHub</span>
+                      </a>
+                    )}
                   </div>
                 </div>
                 <div className="project-info">
