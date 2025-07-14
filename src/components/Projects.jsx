@@ -93,7 +93,7 @@ const Projects = () => {
       image: "/placeholder.svg?height=300&width=500",
       category: "frontend",
       technologies: ["React", "CSS", "Framer Motion"],
-      link: "sujan2.com.np",
+      link: "#",
       github: "https://github.com/sujan698/MY_NEW_PORTFOLIO",
     },
   ];
