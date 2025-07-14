@@ -106,9 +106,9 @@ const About = () => {
               <motion.a
                 href="/Sujan_Bhattarai_CV.pdf"
                 className="btn secondary-btn"
+                download="Sujan_Bhattarai_CV.pdf"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                download
               >
                 Download CV
               </motion.a>
