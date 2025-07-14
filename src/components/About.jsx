@@ -80,7 +80,9 @@ const About = () => {
               </motion.div>
               <motion.div className="detail-item" variants={itemVariants}>
                 <span className="detail-label">Email:</span>
-                <span className="detail-value">officialsujan@gmail.com</span>
+                <span className="detail-value">
+                  sujanbhattarai699@gmail.com
+                </span>
               </motion.div>
               <motion.div className="detail-item" variants={itemVariants}>
                 <span className="detail-label">Location:</span>
@@ -102,7 +104,7 @@ const About = () => {
                 Hire Me
               </motion.a>
               <motion.a
-                href="/sujan_bhattarai_cv.pdf"
+                href="/Sujan_Bhattarai_CV.pdf"
                 className="btn secondary-btn"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
